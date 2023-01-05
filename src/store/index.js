@@ -3,15 +3,18 @@ import Vuex from 'vuex'
 
 Vue.use(Vuex)
 
-export default new Vuex.Store({
+const store = new Vuex.Store({
     state: {
         count: 0,
     },
+
+    actions: {},
+
     mutations: {
         increment(state) {
-            state.increment++
+            state.count++
         },
-    },
-    actions: {},
-    modules: {},
+    }
 })
+
+export default store
