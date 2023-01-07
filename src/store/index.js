@@ -1,19 +1,21 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
 
+import auth from '@/store/modules/auth'
+
 Vue.use(Vuex)
 
 const store = new Vuex.Store({
-    state: {
-        count: 0,
-    },
+    state: {},
 
     actions: {},
 
-    mutations: {
-        increment(state) {
-            state.count++
-        },
+    mutations: {},
+
+    getters: {},
+
+    modules: {
+        auth
     }
 })
 
