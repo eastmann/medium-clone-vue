@@ -35,8 +35,6 @@
                             Sign Up
                         </button>
                     </form>
-                    <button @click="increaseCounter">Increase Counter</button>
-                    {{ count }}
                 </div>
             </div>
         </div>
@@ -58,11 +56,6 @@ export default {
             console.log('submitted form')
         },
 
-        increaseCounter() {
-            console.log('increase counter')
-
-            this.$store.commit('increment')
-        },
     },
 }
 </script>
